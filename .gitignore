@@ -118,9 +118,6 @@ venv.bak/
 *.swo
 *~
 
-# Explicitly preserve committed VS Code multi-root workspace file
-!CampusCare-ML.code-workspace
-
 # Operating system files
 .DS_Store
 .DS_Store?
@@ -179,8 +176,3 @@ temp/
 # *.parquet
 # *.npy
 # *.npz
-
-# =============================================================================
-# 7. Local Git Worktrees
-# =============================================================================
-/.worktrees/
