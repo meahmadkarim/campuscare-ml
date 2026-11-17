@@ -17,7 +17,7 @@ Independent machine learning research project for university complaint classific
 This is **not** a hosted foundation model service. No external AI inference APIs (GPT, Claude, Gemini, etc.) are used for complaint classification. The project develops custom neural networks trained from scratch, following reproducible scientific practices.
 
 **Research Context:**
-- **Goal:** Automatically classify student complaints into one of five university departments
+- **Goal:** Automatically classify English-language student complaints into one of five university departments (English only; no multilingual functionality)
 - **Target Departments:**
   1. Maintenance & Facilities
   2. IT Department

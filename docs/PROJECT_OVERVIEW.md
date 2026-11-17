@@ -26,15 +26,15 @@ The research investigates the feasibility of **scratch-trained neural networks**
 ## Scope
 
 ### In-Scope
-- Text preprocessing and exploratory data analysis (EDA).
-- Classical ML classification experiments.
-- Neural network architecture design, training, and evaluation.
-- Computer vision experiments for visual complaints.
-- Multimodal text-image fusion research.
-- Confidence calibration and reliability assessment.
+- English-language text preprocessing and exploratory data analysis (EDA).
+- Classical ML text classification experiments.
+- Neural network architecture design, training, and evaluation for English complaint text.
+- Confidence calibration and reliability assessment for human-in-the-loop triage.
 - Self-hosted inference API development.
+- Computer vision and multimodal text-image fusion research (planned subsequent phase after text baselines).
 
 ### Out-of-Scope
+- Multilingual complaint processing (English only; Russian, Kyrgyz, or other languages are strictly out-of-scope).
 - Use of hosted LLM APIs (OpenAI, Anthropic, Google, etc.).
 - Fine-tuning of extremely large pretrained models (BERT, GPT).
 - Production deployment at a university-wide scale.

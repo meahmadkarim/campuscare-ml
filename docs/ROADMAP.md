@@ -32,10 +32,10 @@ Establish the theoretical and methodological foundation for the classification s
 Collect, clean, and prepare the dataset for supervised learning.
 
 ### Tasks
-- [ ] Obtain authorized or independently collected complaint examples
+- [ ] Obtain authorized or independently collected English complaint examples (English only; no multilingual scope)
 - [ ] Manually label examples following the established strategy
 - [ ] Perform exploratory data analysis (EDA) and class balance check
-- [ ] Create text preprocessing pipeline (tokenization, cleaning)
+- [ ] Create text preprocessing pipeline (English tokenization, cleaning, PII redaction)
 - [ ] Design leakage-resistant train/val/test splits
 - [ ] Document dataset versioning and distribution stats
 

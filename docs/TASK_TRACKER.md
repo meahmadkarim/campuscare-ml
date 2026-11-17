@@ -58,14 +58,14 @@ Every task is assigned one of four priority levels:
 
 | Phase | Phase Name | Total Tasks | Completed | In Review | In Progress | Blocked | Ready | Backlog |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| **Phase 0** | Development Infrastructure | 9 | 8 | 0 | 0 | 0 | 1 | 0 |
-| **Phase 1** | Project Research and Architecture | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
+| **Phase 0** | Development Infrastructure | 9 | 9 | 0 | 0 | 0 | 0 | 0 |
+| **Phase 1** | Project Research and Architecture | 5 | 0 | 0 | 0 | 0 | 1 | 4 |
 | **Phase 2** | Dataset Engineering | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | **Phase 3** | Baseline Machine Learning | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | **Phase 4** | Advanced Machine Learning | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | **Phase 5** | Local Inference and Testing | 5 | 0 | 0 | 0 | 0 | 0 | 5 |
 | **Phase 6** | Documentation and Release Preparation | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
-| **Total** | **All Phases** | **38** | **8** | **0** | **0** | **0** | **1** | **29** |
+| **Total** | **All Phases** | **38** | **9** | **0** | **0** | **0** | **1** | **28** |
 
 ---
 
@@ -196,16 +196,17 @@ Every task is assigned one of four priority levels:
 #### `INFRA-008` — Agent-Specific Instruction Bridges and Worktree Baseline Synchronization
 - **Task ID:** `INFRA-008`
 - **Task Title:** Agent-Specific Instruction Bridges and Worktree Baseline Synchronization
-- **Description:** Configure agent-specific instruction loading (where required for Claude Code and Antigravity) and synchronize approved Phase 0 documentation commits (`AGENTS.md`, `docs/TASK_TRACKER.md`, `docs/handoffs/`, `docs/GIT_WORKFLOW.md`) across `main`, `agent/codex`, `agent/claude`, and `agent/antigravity`.
+- **Description:** Configure agent-specific instruction loading bridges (`CLAUDE.md`, `GEMINI.md` referencing `AGENTS.md`) and synchronize approved Phase 0 baseline commits across `main`, `agent/codex`, `agent/claude`, and `agent/antigravity`.
 - **Responsible Agent:** Google Antigravity
 - **Priority:** High
-- **Current Status:** Ready
+- **Current Status:** Completed
 - **Dependencies:** `DOC-001`, `INFRA-005`, `INFRA-006`, `INFRA-007`
 - **Assigned Git Branch:** `agent/antigravity`
 - **Acceptance Criteria:**
+  - `CLAUDE.md` and `GEMINI.md` bridge references created and committed.
   - Approved Phase 0 commits are integrated into `main` with user authorization.
   - All three agent worktrees fast-forward cleanly to the synchronized `main` baseline.
-- **Related Commit / PR:** None
+- **Related Commit / PR:** Committed on `agent/antigravity`
 - **Last Updated Date:** 2026-11-17
 
 ---
@@ -215,15 +216,15 @@ Every task is assigned one of four priority levels:
 #### `ARCH-001` — Define ML Project Objectives and Problem Formulation
 - **Task ID:** `ARCH-001`
 - **Task Title:** Define ML Project Objectives and Problem Formulation
-- **Description:** Formally specify the machine learning problem statement, input modalities, operational constraints, non-goals (no external hosted LLM inference APIs), and quantitative success criteria.
+- **Description:** Formally specify the machine learning problem statement for English-only university complaint classification across five target categories, input modalities, operational constraints, non-goals (no external hosted LLM inference APIs, no multilingual scope), and quantitative success criteria.
 - **Responsible Agent:** Anthropic Claude Code
 - **Priority:** Critical
-- **Current Status:** Backlog
+- **Current Status:** Ready
 - **Dependencies:** `INFRA-008`
 - **Assigned Git Branch:** `agent/claude`
 - **Acceptance Criteria:**
   - Formal problem specification document is reviewed and approved by the user.
-  - Scope boundaries, latency targets, and reproducibility constraints are unambiguously defined.
+  - Scope boundaries (English only), latency targets, and reproducibility constraints are unambiguously defined.
 - **Related Commit / PR:** None
 - **Last Updated Date:** 2026-11-17
 
@@ -245,7 +246,7 @@ Every task is assigned one of four priority levels:
 #### `ARCH-003` — Determine Dataset Requirements and Schema Specification
 - **Task ID:** `ARCH-003`
 - **Task Title:** Determine Dataset Requirements and Schema Specification
-- **Description:** Define the required dataset fields, data types, validation constraints, minimum sample counts per class, language coverage expectations, and file storage/manifest conventions.
+- **Description:** Define the required dataset fields, data types, validation constraints, minimum sample counts per class (English-only), text length bounds, and file storage/manifest conventions.
 - **Responsible Agent:** Anthropic Claude Code
 - **Priority:** High
 - **Current Status:** Backlog

@@ -14,7 +14,7 @@ This document outlines the dataset collection, curation, labeling, and splitting
 - **Synthetic Data:** Permitted for early research prototypes and edge-case testing, with clear tagging.
 
 ### Data Characteristics
-- **Language:** English, Russian, and Kyrgyz (multilingual university environment).
+- **Language:** English only (university complaints in English; no multilingual functionality).
 - **Length:** Typically short text snippets (1-3 sentences) accompanied by optional photos.
 - **Volume Target:** Minimum 1,000 labeled examples per department for initial baseline training (5,000 total).
 
