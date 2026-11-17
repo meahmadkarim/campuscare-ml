@@ -161,7 +161,7 @@ Every task is assigned one of four priority levels:
 - **Acceptance Criteria:**
   - `docs/TASK_TRACKER.md` exists in the Antigravity worktree and defines all required fields, status rules, priority rules, and phase tasks (`Phase 0`–`Phase 6`).
   - No unimplemented ML tasks are falsely marked `Completed`.
-- **Related Commit / PR:** Committed on `agent/antigravity` (user-approved)
+- **Related Commit / PR:** `63b125c` (`docs: add multi-agent task tracker, handoff system, and git workflow`)
 - **Last Updated Date:** 2026-11-17
 
 #### `INFRA-006` — Multi-Agent Handoff Protocol and Template (`docs/handoffs/`)
@@ -176,7 +176,7 @@ Every task is assigned one of four priority levels:
 - **Acceptance Criteria:**
   - `docs/handoffs/HANDOFF_TEMPLATE.md` includes sections A through J.
   - `docs/handoffs/README.md` documents both the 10-step normal handoff workflow and the 8-step emergency recovery workflow without violating worktree isolation.
-- **Related Commit / PR:** Committed on `agent/antigravity` (user-approved)
+- **Related Commit / PR:** `63b125c` (`docs: add multi-agent task tracker, handoff system, and git workflow`)
 - **Last Updated Date:** 2026-11-17
 
 #### `INFRA-007` — Multi-Agent Git Collaboration Workflow (`docs/GIT_WORKFLOW.md`)
@@ -190,7 +190,7 @@ Every task is assigned one of four priority levels:
 - **Assigned Git Branch:** `agent/antigravity`
 - **Acceptance Criteria:**
   - `docs/GIT_WORKFLOW.md` covers all required sections (3.1–3.8) and aligns strictly with `AGENTS.md`.
-- **Related Commit / PR:** Committed on `agent/antigravity` (user-approved)
+- **Related Commit / PR:** `63b125c` (`docs: add multi-agent task tracker, handoff system, and git workflow`)
 - **Last Updated Date:** 2026-11-17
 
 #### `INFRA-008` — Agent-Specific Instruction Bridges and Worktree Baseline Synchronization
